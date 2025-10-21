@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>mohamed</title>
+        <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet"/>
+        <link rel="icon" href="https://cdn.oaistatic.com/assets/favicon-eex17e9e.ico"/>
+        <meta name="theme-color" content="red"/>
+        <meta http-equiv="refresh" content=""/>
+        <meta name="description" content="learning html day1"/>
+        <meta name="keywords" content="html,css,javascript,learn,new"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+        <style>
+             h1 {
+                 color: rgb(75, 39, 16);
+                 font-family: "Creepster", system-ui;
+                 background-color: wheat;
+                 border:1px solid black;
+                 font-size: 40px;
+                 border-radius: 20px 20px 20px 20px;
+                 box-shadow: 0px 0px 25px black;
+                 justify-content: center;
+                 align-items: center;
+                 display: flex;
+                }
+
+             h2 {
+                 color: rgb(56, 26, 7);
+                 font-family: "Creepster", system-ui;
+                 background-color: wheat;
+                 border:1px solid black;
+                 font-size: 40px;
+                 border-radius: 20px 20px 20px 20px;
+                 box-shadow: 0px 0px 25px black;
+                 justify-content: center;
+                 align-items: center;
+                 display: flex
+                }
+
+             .bg-video {
+                 position: fixed;
+                 top: 0;
+                 left: 0;
+                 width: 100%;
+                 height: 100%;
+                 object-fit: cover;
+                 z-index: -1;
+                }
+
+             .vd1 {
+                 display: block;
+                 width: 500px;
+                 height: auto;
+                 box-shadow: 0pX 0px 25px 5px black;
+                 border-radius: 10px 10px 10px 10px;
+                 margin:0 auto;
+                 margin-top: 500px;
+                }
+
+             .images {
+                 display: flex;
+                 justify-content: center; /* يخلي العناصر في النص */
+                 align-items: center;
+                 width: 100%;
+                 gap: 40px; /* مسافة بينهم */
+                 position: relative;
+                 height: 299px;
+                }
+
+             .png1 {
+                 position: absolute;
+                 left: 0; /* أقصى الشمال */
+                }
+
+             .png2 {
+                 position: absolute;
+                 right: 0; /* أقصى اليمين */
+                }
+
+             .sg {
+                 width: 300px;
+                 height: 45px;
+                 border-radius: 10px;
+                 background-color: #222;
+                 padding: 10px;
+                 box-shadow: 0 0 20px rgba(0,0,0,0.3)
+                }
+
+        </style>
+
+        
+
+    </head>
+
+    <body bgcolor="goldenrod">
+        <h1 title="description">mohamed emad</h1>
+        <h2 title="description">test day2</h2>
+        <h1 dir="rtl">محمد عماد</h1>
+
+        <a href="https://www.google.com" target="_self" title="رابط تجريبي">google</a>
+        <a href="sms:+201026289380">sms</a>
+        <a href="mailto:moemad7700@gmail.com">email me</a>
+
+        <div class="images">
+        <img src="123.png" class="png1" alt="png" width="300" height="300" style="box-shadow: 0px 0px 20px black; border-radius: 10px 10px 10px 10px;"/>
+        <img src="123.png" class="png2" alt="png" width="300" height="300" style="box-shadow: 0px 0px 20px black; border-radius: 10px 10px 10px 10px;"/>
+        <audio src="sg.mp3" class="sg" controls></audio>
+        </div>
+
+        
+
+        <video class="vd1" src="aot.mp4" controls width="500px"></video>
+
+        <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="poster.jpg" aria-hidden="true">
+               <source src="bc.mp4" type="video/mp4">
+
+        </video>
+
+ 
+       
+        
+
+
+
+
+    </body>
+</html>
