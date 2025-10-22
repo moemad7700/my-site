@@ -6,7 +6,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet"/>
         <link rel="icon" href="https://cdn.oaistatic.com/assets/favicon-eex17e9e.ico"/>
         <meta name="theme-color" content="red"/>
-        <meta http-equiv="refresh" content="1000"/>
+        <meta http-equiv="refresh" content=""/>
         <meta name="description" content="learning html day1"/>
         <meta name="keywords" content="html,css,javascript,learn,new"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -88,6 +88,52 @@
                  box-shadow: 0 0 20px rgb(255, 255, 255)
                 }
 
+             .d1 {
+                 width: 200px;
+                 height: 200px;
+                 background-color: goldenrod;
+                 margin-top: 80px;
+                 border-radius: 50%;
+                 box-shadow: 0px 0px 20px black;
+                }
+
+             .d2 {
+                 width: 200px;
+                 height: 200px;
+                 background-color: goldenrod;
+                 margin-top: 80px;
+                 border-radius: 50%;
+                 box-shadow: 0px 0px 20px black; 
+                }
+
+             .d3 {
+                 width: 200px;
+                 height: 200px;
+                 background-color: goldenrod;
+                 margin-top: 80px;
+                 border-radius: 50%;
+                 box-shadow: 0px 0px 20px black;
+                }
+
+             .d4 {
+                 width: 200px;
+                 height: 200px;
+                 background-color: goldenrod;
+                 margin-top: 80px;
+                 border-radius: 50%;
+                 box-shadow: 0px 0px 20px black;
+                }
+
+             .d5 {
+                 width: 200px;
+                 height: 200px;
+                 background-color: goldenrod;
+                 margin-top: 80px;
+                 border-radius: 50%;
+                 box-shadow: 0px 0px 20px black;
+                }
+
+
         </style>
 
         
@@ -95,7 +141,7 @@
     </head>
 
     <body bgcolor="goldenrod">
-        <h1 title="description">mohamed emad</h1>
+        <h1 title="description">mohamed emad . hun</h1>
         <h2 title="description">test day2</h2>
         <h1 dir="rtl">محمد عماد</h1>
 
@@ -204,14 +250,71 @@
            </form>
         </div>
 
+        <div style="display: flex; justify-content: space-around; margin-top: 80px;">
+         <div class="d1"></div>
+         <div class="d2"></div>
+         <div class="d3"></div>
+         <div class="d4"></div>
+         <div class="d5"></div>
+        </div>
+
+        <marquee direction="left" scrollamount="40" style="font-size: 64px; font-family: 'Creepster', system-ui; color: rgb(56, 26, 7); background-color: goldenrod; padding: 1px; border: 2px solid goldenrod; margin-top: 60px; box-shadow: 0px 0px 20px black; border-radius: 15px;">This is a scrolling text bitch!!</marquee>
+
+        <fieldset style="border: 2px solid goldenrod; border-radius: 15px; padding: 20px; margin-top: 60px; box-shadow: 0px 0px 20px black; background-color: wheat;">
+            <legend style="font-size: 32px; font-family: 'Creepster', system-ui; color: rgb(56, 26, 7); background-color: goldenrod; padding: 5px 10px; border: 2px solid goldenrod; box-shadow: 0px 0px 20px black; border-radius: 10px;">User Information</legend>
+            <p style="font-size: 24px; font-family: Arial, sans-serif; color: rgb(75, 39, 16);">Name: Mohamed Emad</p>
+            <p style="font-size: 24px; font-family: Arial, sans-serif; color: rgb(75, 39, 16);">Age: 25</p>
+            <p style="font-size: 24px; font-family: Arial, sans-serif; color: rgb(75, 39, 16);">City: Cairo</p>
+        </fieldset>
+
+        <div id="scroll-loader" style=" position: fixed; bottom: 20px; right: 20px; width: 40px; height: 40px;">
+         <svg viewBox="0 0 36 36" style="width: 100%; height: 100%;">
+           <circle cx="18" cy="18" r="15.9155" fill="white" stroke="none" stroke-width="3"/>
+           <circle id="scroll-progress" cx="18" cy="18" r="15.9155" fill="none" stroke="goldenrod" stroke-width="3"stroke-dasharray="100" transform="rotate(-90 18 18)"/>
+         </svg>
+        </div>
+
+        <script>
+         const progressCircle = document.getElementById("scroll-progress");
+         const radius = 15.9155;
+         const circumference = 2 * Math.PI * radius;
+         progressCircle.style.strokeDasharray = circumference;
+         progressCircle.style.strokeDashoffset = circumference;
+
+         window.addEventListener("scroll", () => {
+           const scrollTop = window.scrollY;
+           const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+           const scrollPercent = scrollTop / scrollHeight;
+           const offset = circumference - scrollPercent * circumference;
+           progressCircle.style.strokeDashoffset = offset;
+         });
+        </script>
+
+        <details style="width: fit-content;">
+         <summary style="font-size: 32px; font-family: 'Creepster', system-ui; color: rgb(56, 26, 7); margin-top: 50px; margin-bottom: 50px; background-color: goldenrod; padding: 0px 10px; border: 2px solid goldenrod; box-shadow: 0px 0px 20px black; border-radius: 10px; cursor: pointer;">More Info</summary>
+
+         <div style="margin-top: 10px; border: 2px solid goldenrod; border-radius: 20px; overflow: hidden;">
+          <iframe width="560" height="315" src="https://youtu.be/2CMoyNf4_1M?si=-ephFTq9lqojCjPa" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+            style="display: block; border: none;">
+          </iframe>
+         </div>
+        </details>
 
 
+        <!--importanttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
+        <nav>
+          <ul style="list-style-type: none; padding: 0; display: flex; gap: 20px;">
+            <li><a href="#" style="text-decoration: none; color: goldenrod;">Home</a></li>
+            <li><a href="#" style="text-decoration: none; color: goldenrod;">About</a></li>
+            <li><a href="#" style="text-decoration: none; color: goldenrod;">Services</a></li>
+            <li><a href="#" style="text-decoration: none; color: goldenrod;">Contact</a></li>
+          </ul>
+        </nav>
 
-
-
+        
 
 
 
     </body>
 </html>
-
