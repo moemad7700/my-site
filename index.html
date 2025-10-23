@@ -5,161 +5,37 @@
         <title>mohamed</title>
         <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet"/>
         <link rel="icon" href="https://cdn.oaistatic.com/assets/favicon-eex17e9e.ico"/>
+        <link rel="stylesheet" href="css/st1.css">
         <meta name="theme-color" content="red"/>
         <meta http-equiv="refresh" content=""/>
         <meta name="description" content="learning html day1"/>
         <meta name="keywords" content="html,css,javascript,learn,new"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <meta name="google-site-verification" content="jA9IkojxxgS74ILH7alMaf1Q4Mkp-sYIs9QUHEUAd3M" />
 
-        <style>
-             h1 {
-                 color: rgb(75, 39, 16);
-                 font-family: "Creepster", system-ui;
-                 background-color: wheat;
-                 border:1px solid black;
-                 font-size: 40px;
-                 border-radius: 20px 20px 20px 20px;
-                 box-shadow: 0px 0px 25px black;
-                 justify-content: center;
-                 align-items: center;
-                 display: flex;
-                }
-
-             h2 {
-                 color: rgb(56, 26, 7);
-                 font-family: "Creepster", system-ui;
-                 background-color: wheat;
-                 border:1px solid black;
-                 font-size: 40px;
-                 border-radius: 20px 20px 20px 20px;
-                 box-shadow: 0px 0px 25px black;
-                 justify-content: center;
-                 align-items: center;
-                 display: flex
-                }
-
-             .bg-video {
-                 position: fixed;
-                 top: 0;
-                 left: 0;
-                 width: 100%;
-                 height: 100%;
-                 object-fit: cover;
-                 z-index: -1;
-                }
-
-             .vd1 {
-                 display: block;
-                 width: 500px;
-                 height: auto;
-                 box-shadow: 0pX 0px 25px 5px black;
-                 border-radius: 10px 10px 10px 10px;
-                 margin:0 auto;
-                 margin-top: 500px;
-                }
-
-             .images {
-                 display: flex;
-                 justify-content: center; /* يخلي العناصر في النص */
-                 align-items: center;
-                 width: 100%;
-                 gap: 40px; /* مسافة بينهم */
-                 position: relative;
-                 height: 299px;
-                }
-
-             .png1 {
-                 position: absolute;
-                 left: 0; /* أقصى الشمال */
-                }
-
-             .png2 {
-                 position: absolute;
-                 right: 0; /* أقصى اليمين */
-                }
-
-             .sg {
-                 width: 400px;
-                 height: 45px;
-                 border-radius: 10px;
-                 background-color: #ffffff;
-                 padding: 10px;
-                 box-shadow: 0 0 30px rgb(255, 255, 255)
-                }
-
-             .d1 {
-                 width: 200px;
-                 height: 200px;
-                 background-color: goldenrod;
-                 margin-top: 80px;
-                 border-radius: 50%;
-                 box-shadow: 0px 0px 20px black;
-                }
-
-             .d2 {
-                 width: 200px;
-                 height: 200px;
-                 background-color: goldenrod;
-                 margin-top: 80px;
-                 border-radius: 50%;
-                 box-shadow: 0px 0px 20px black; 
-                }
-
-             .d3 {
-                 width: 200px;
-                 height: 200px;
-                 background-color: goldenrod;
-                 margin-top: 80px;
-                 border-radius: 50%;
-                 box-shadow: 0px 0px 20px black;
-                }
-
-             .d4 {
-                 width: 200px;
-                 height: 200px;
-                 background-color: goldenrod;
-                 margin-top: 80px;
-                 border-radius: 50%;
-                 box-shadow: 0px 0px 20px black;
-                }
-
-             .d5 {
-                 width: 200px;
-                 height: 200px;
-                 background-color: goldenrod;
-                 margin-top: 80px;
-                 border-radius: 50%;
-                 box-shadow: 0px 0px 20px black;
-                }
-
-
-        </style>
-
-        
 
     </head>
 
-    <body bgcolor="goldenrod">
+
+
+    <body>
         <h1 title="description">mohamed emad . hun</h1>
         <h2 title="description">test day2</h2>
-        <h1 dir="rtl">محمد عماد</h1>
+        <h1>محمد عماد</h1>
 
         <a href="https://www.google.com" target="_self" title="رابط تجريبي">google</a>
         <a href="sms:+201026289380">sms</a>
         <a href="mailto:moemad7700@gmail.com">email me</a>
 
         <div class="images">
-        <img src="123.png" class="png1" alt="png" width="300" height="300" style="box-shadow: 0px 0px 20px black; border-radius: 10px 10px 10px 10px;"/>
-        <img src="123.png" class="png2" alt="png" width="300" height="300" style="box-shadow: 0px 0px 20px black; border-radius: 10px 10px 10px 10px;"/>
-        <audio src="sg.mp3" class="sg" controls></audio>
+        <img src="src/imgs/123.png" class="png1" alt="png" width="300" height="300" style="box-shadow: 0px 0px 20px black; border-radius: 10px 10px 10px 10px;"/>
+        <img src="src/imgs/123.png" class="png2" alt="png" width="300" height="300" style="box-shadow: 0px 0px 20px black; border-radius: 10px 10px 10px 10px;"/>
+        <audio src="src/sg.mp3" class="sg" controls></audio>
         </div>
 
         
+        <video class="vd1" src="src/vids/aot.mp4" controls width="500px"></video>
 
-        <video class="vd1" src="aot.mp4" controls width="500px"></video>
-
-        <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="poster.jpg" aria-hidden="true"><source src="bc.mp4" type="video/mp4"></video>
+        <video class="bg-video" autoplay muted loop playsinline preload="metadata" poster="poster.jpg" aria-hidden="true"><source src="src/vids/bc.mp4" type="video/mp4"></video>
 
         <table border="10" width="800px" height="400px" style="margin:0 auto; margin-top:80px; box-shadow: 0px 0px 40px black; border-radius: 20px 20px 20px 20px; font-size: larger;">
             <caption>جدول البيانات</caption>
@@ -233,7 +109,7 @@
              <dd>-JavaScript</dd>  
         </dl>
 
-        <form style=" width: 400px; margin: 50px auto; padding: 40px; background-color: #ffd971; border-radius: 20px; box-shadow: 10px 10px 40px rgba(0,0,0,0.3); display: flex; flex-direction: column; gap: 20px; font-family: Arial, sans-serif;">
+        <form style=" width: 400px; margin: 50px auto; padding: 40px; background-image: linear-gradient(to bottom, goldenrod , gold); border-radius: 20px; box-shadow: 10px 10px 40px rgba(0,0,0,0.3); display: flex; flex-direction: column; gap: 20px; font-family: Arial, sans-serif;">
            <input type="text" placeholder="Username" style=" padding: 15px; border-radius: 10px; border: 1px solid #ccc; font-size: 18px;">
            <input type="password" placeholder="Password" style=" padding: 15px;border-radius: 10px; border: 1px solid #ccc; font-size: 18px;">
            <input type="submit" value="Login" title="dont press it asshole" style=" padding: 15px; border-radius: 10px; border: none; background-color: #ff9800; color: white; font-size: 18px; cursor: pointer; transition: background-color 0.3s;" onmouseover="this.style.backgroundColor='#e68900'" onmouseout="this.style.backgroundColor='#ff9800'">
@@ -260,11 +136,11 @@
 
         <marquee direction="left" scrollamount="40" style="font-size: 64px; font-family: 'Creepster', system-ui; color: rgb(56, 26, 7); background-color: goldenrod; padding: 1px; border: 2px solid goldenrod; margin-top: 60px; box-shadow: 0px 0px 20px black; border-radius: 15px;">This is a scrolling text bitch!!</marquee>
 
-        <fieldset style="border: 2px solid goldenrod; border-radius: 15px; padding: 20px; margin-top: 60px; box-shadow: 0px 0px 20px black; background-color: wheat;">
-            <legend style="font-size: 32px; font-family: 'Creepster', system-ui; color: rgb(56, 26, 7); background-color: goldenrod; padding: 5px 10px; border: 2px solid goldenrod; box-shadow: 0px 0px 20px black; border-radius: 10px;">User Information</legend>
-            <p style="font-size: 24px; font-family: Arial, sans-serif; color: rgb(75, 39, 16);">Name: Mohamed Emad</p>
-            <p style="font-size: 24px; font-family: Arial, sans-serif; color: rgb(75, 39, 16);">Age: 25</p>
-            <p style="font-size: 24px; font-family: Arial, sans-serif; color: rgb(75, 39, 16);">City: Cairo</p>
+        <fieldset class="field1" >
+            <legend class="leg1">User Information</legend>
+            <p class="par1">Name: Mohamed Emad</p>
+            <p class="par1">Age: 25</p>
+            <p class="par1">City: Cairo</p>
         </fieldset>
 
         <div id="scroll-loader" style=" position: fixed; bottom: 20px; right: 20px; width: 40px; height: 40px;">
@@ -294,13 +170,20 @@
          <summary style="font-size: 32px; font-family: 'Creepster', system-ui; color: rgb(56, 26, 7); margin-top: 50px; margin-bottom: 50px; background-color: goldenrod; padding: 0px 10px; border: 2px solid goldenrod; box-shadow: 0px 0px 20px black; border-radius: 10px; cursor: pointer;">More Info</summary>
 
          <div style="margin-top: 10px; border: 2px solid goldenrod; border-radius: 20px; overflow: hidden;">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/ad4VbWQ5B88?si=W59XM5B0d7WJcz3T" 
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2CMoyNf4_1M?si=hYJPKIZ3Svu4GmFx" 
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
             style="display: block; border: none;">
           </iframe>
          </div>
         </details>
 
+        <button class="buttom1" title="dont click"
+         onmouseover="this.style.backgroundColor='#e68900'"
+         onmouseout="this.style.backgroundColor='#ff9800'"
+         onmousedown="this.style.transform='translateY(3px)'; this.style.boxShadow='0 2px 0 #c77700';"
+         onmouseup="this.style.transform='translateY(0px)'; this.style.boxShadow='0 5px 0 #c77700';">Click Me!</button>
+
+        <img class="sky1" src="src/imgs/sky1.jpg" alt="photo">
 
         <!--importanttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-->
         <nav>
@@ -312,12 +195,13 @@
           </ul>
         </nav>
 
+
+
+        
+
         
 
 
 
     </body>
 </html>
-
-
-
